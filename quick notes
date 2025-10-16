@@ -1,0 +1,20 @@
+
+LocalDate ->.getDayOfMonth()
+	  ->.getYear()
+	  ->.getMonthValue()
+
+LocalTime -> .getHour()
+	  -> .getMinute()
+          -> .getSecond()
+ 	  -> .getNano()
+
+LocalDateTime -> .of(year,month,date,hour,minutes,seconds,nanoseconds)
+
+Period    -> .between(start,enddate)
+
+ZoneId  ->     ZoneId zone = ZoneId.systemDefault();
+
+               ZoneId losangeles = ZoneId.of("America/Los_Angeles");
+               
+ 	       ZonedDateTime zt2 = ZonedDateTime.now(losangeles);
+
